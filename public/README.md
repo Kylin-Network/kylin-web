@@ -1,0 +1,1 @@
+- The contents of the current folder are automatically copied to the packaged project after compilation, and this file can be deleted

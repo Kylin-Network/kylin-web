@@ -1,0 +1,54 @@
+@import url('./reset.scss');
+
+@font-face {
+  font-family: Avenir-Book;
+  font-display: swap;
+  src: url("./font/AvenirLTStd-Book.otf");
+}
+@font-face {
+  font-family: Avenir-Light;
+  font-display: swap;
+  src: url("./font/AvenirLTStd-Light.otf");
+}
+@font-face {
+  font-family: Avenir-Heavy;
+  font-display: swap;
+  src: url("./font/AvenirLTStd-Heavy.otf");
+}
+@font-face {
+  font-family: Avenir-Black;
+  font-display: swap;
+  src: url("./font/AvenirLTStd-Black.otf");
+}
+@font-face {
+  font-family: Avenir-Medium;
+  font-display: swap;
+  src: url("./font/AvenirLTStd-Medium.otf");
+}
+@font-face {
+  font-family: Lobster;
+  font-display: swap;
+  src: url("./font/Lobster-1.4.otf");
+}
+
+* {
+  font-family: PingFangSC-Regular, Microsoft Yahei;
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+html {
+  font-size: calc(100 * (100vw / 1920));
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: calc(100 * (100vw / 1080));
+  }
+}
+
+body {
+  font-size: 14px;
+}

@@ -1,0 +1,35 @@
+{
+  "name": "parceljs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "rm -rf ./.cache && rm -rf ./dist && parcel ./src/*.html",
+    "build": "rm -rf ./.cache ./dist ./build && parcel build ./src/*.html -d build --public-url ./ --no-source-maps --no-minify"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "autoprefixer": "^9.8.4",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.4.3",
+    "postcss-modules": "^3.2.0",
+    "sass": "^1.26.10"
+  },
+  "staticFiles": {
+    "staticPath": [
+      "public"
+    ]
+  },
+  "browserslist": [
+    "ie >= 6",
+    "firefox >= 8",
+    "chrome >= 24",
+    "Opera>=10"
+  ]
+}
