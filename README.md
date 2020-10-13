@@ -19,10 +19,10 @@ Kylin Network aims to Build a Cross-chain Platform Empowering the Data Economy o
 
 The architecture of Kylin Network includes below main components:
 
-- **Kylin Data Oracle** is a decentralized oracle network powered by Polkadot offering multiple, real-time data sources. In addition to the complementarity and synergy to off-chain workers (OCW), Kylin seeks to extend the data provisional resources of the Polkadot network across all possible data types/sources including, but not limited to things like social media posts, flight information, exchange rates, weather reporting, etc.
-- **Kylin Data Marketplace** is an open platform for the data economy. Dapps built on Polkadot can access this platform to easily and efficiently collect both off-chain and on-chain data only paying a very competitive fee.
-- **Kylin Data Analytics** is a combination of analyzing tools designed for data warehouses. It extracts meaningful data findings, patterns, interpretation, and finally implements low-cost commercialization functionalities for the public.
-- **Kylin Token $KYL** is the native token of Kylin Network which will play the role of governance and other utilities. $KYL is necessary to secure and power the decentralized oracle network.
+- **Kylin Data Analytics** is a combination of analyzing tools designed for data warehouses. It extracts meaningful data findings, patterns, interpretation, and finally implements low-cost commercialization functionalities for the public. It also provides a query engine and restful API for third-party applications (Dapps, Networks, etc.) or external analytics tools (BI tools, Machine Learning, etc).
+- **Kylin Data Oracle** is an advanced decentralized data feeding protocol powered by Polkadot offering multiple, real-time data sources. In addition to the complementarity and synergy to off-chain workers (OCW) as one kind of Oracle Node implementations, it can better guarantee the security and accuracy of external data by verifying the data integrity and the validity that Oracle Node provided.
+- **Kylin Data Marketplace** is an open platform for data exchange and pricing. Dapps built on Polkadot can easily and efficiently collect both off-chain and on-chain data only paying a very competitive fee. Kylin seeks to extend the data provisional resources across all possible data types/sources including but not limited to things like social media posts, flight information, exchange rates, weather reporting, etc.
+- **Kylin Token $KYL** is the native token of Kylin Network which will play the role of governance and other utilities. $KYL is necessary to secure and power the decentralized data network.
 
 ## Substrate/Polkadot Integration
 
@@ -31,12 +31,12 @@ Polkadot ecosystem and the newly-updated Substrate 2.0 are essential to what Kyl
 The pallets that come with the Substrate 2.0 upgrade can offer Kylin Network the tools and maps to navigate through our vision, which is to build a decentralized oracle that offers on/off-chain data with built-in interoperability.  Off-chain worker (OCW) is a substrate subsystem which can process off-chain data in an asynchronous way. It is a new feature in Substrate 2.0 that allows to integrate data onto the blockchain. 
 
 ## Application Scenarios
-- Decentralized insurance automatic payment
-- Stable coins and crypto derivatives
-- Crypto asset lending platform
-- Cross-chain decentralized exchange
-- Decentralized casinos and games
-- Blockchain computing market
+- Decentralized Insurance Automatic Payment
+- Stable Coins and Crypto Derivatives
+- Crypto Asset Lending Platform
+- Cross-chain Decentralized Exchange
+- Decentralized Casinos and Games
+- Blockchain Computing Market
 
 ## Additional Links
 - Website: [https://kylin.network/](https://kylin.network/)
