@@ -7,7 +7,7 @@
 
 ## Project Overview
 
-Kylin Network aims to Build a Cross-chain Platform Empowering the Data Economy on Polkadot. It offers any applications and blockchains (such as parachains and parathreads) instantaneous but reliable and valid on/off-chain market data and social data sources by leveraging the power of [Polkadot](https://polkadot.network/)/[Substrate](https://github.com/paritytech/substrate) Framework. 
+Kylin Network aims to Build a Cross-chain Platform Empowering the Data Economy on Polkadot. It will be the Data Infrastructure for DeFi and Web 3.0 Powered by Polkadot. It offers any applications and blockchains (such as parachains and parathreads) instantaneous but reliable and valid on/off-chain market data and social data sources by leveraging the power of [Polkadot](https://polkadot.network/)/[Substrate](https://github.com/paritytech/substrate) Framework. 
 
 ![img](https://lh6.googleusercontent.com/ivic3ZWaWxVVW0TEbFrCzrZTRp4rAXZWzilZ-BrGGolXNOazdjo1SAiogMlILXGrpiLSSXxezVF45ttrBD9PsfCQGQRzjrg6W2cOqv9s0Hy3wOMeIYYfLwIisO6MxyDBlA)
 
