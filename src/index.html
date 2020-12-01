@@ -6,8 +6,9 @@
   <link rel="shortcut icon" type="image/x-icon" href="./favicon.png">
   <link rel="icon" href="./favicon.png"/>
   <link rel="apple-touch-icon" href="./favicon.png"/>
-  <title>Kylin Network | Polkadot Oracle</title>
+  <title>Kylin Network | The Data Infrastructure for DeFi and Web3.0</title>
   <link rel="stylesheet" href="./css/main.scss">
+  <!-- <link rel="stylesheet" href="./css/index.scss"> -->
   <link rel="stylesheet" href="./css/pc.scss">
   <link rel="stylesheet" href="./css/mobile.scss">
 </head>
@@ -28,40 +29,146 @@
           </div>
         </div>
         <div class="right">
-          <button first="true" targetclassname="banner">Home</button>
-          <button targetclassname="architect">Technology</button>
-          <button targetclassname="economics">Tokenomics</button>
+          <!-- <button first="true" targetclassname="banner">Home</button> -->
+          <button targetclassname="technology">Technology</button>
           <button>
-            <a target="_blank">Whitepaper</a>
+            <a target="_blank" href="https://wiki.kylin.network/">Docs</a>
           </button>
-          <button>
-            <a href="https://wiki.kylin.network/" target="_blank">Wiki</a>
-          </button>
+          <!-- <button class="menuPopBox">
+            <span>Oracle</span>
+            <b></b>
+            <div class="pop">
+              <a href="./Kylin-whitepaperV1.0.pdf?6" target="_blank">Whitepaper</a>
+              <a href="https://wiki.kylin.network/" target="_blank">Wiki</a>
+            </div>
+          </button> -->
+          <button targetclassname="economics">Token</button>
+          <button targetclassname="application">Ecosystem</button>
+          <button targetclassname="team">Team</button>
           <span class="flagLine"></span>
+          <button class="menuPopBox">
+            <span>Tools</span>
+            <b></b>
+            <div class="pop">
+              <a target="_blank" class="apiDocsBtn">API Docs</a>
+            </div>
+          </button>
         </div>
       </div>
     </div>
   </div>
   <div class="bgAnimate"></div>
+  <!-- banner -->
   <div class="banner mainBox">
-    <h3>Build a Decentralized Network Empowering the Data Economy on Polkadot.</h3>
+    <!-- <img src="./imgs/logoWhite.svg" alt=""> -->
+    <h3>Building a Cross-chain Platform Powering the Data Economy on Polkadot</h3>
     <div class="text">
-      <p>A Decentralized Oracle Network Powered by Polkadot, </p>
-      <p>Offering Multiple Real-time Data Sources.</p>
+      <p>The Data Infrastructure for DeFi and Web 3.0 Powered by Polkadot</p>
     </div>
     <div class="btn">
+      <a class="btnBox">
+        <div></div>
+        <span></span>
+        <b></b>
+      </a>
       <p>View the Introduction</p>
     </div>
   </div>
-  <div class="architect">
-    <div class="mainBox">
+  <div class="technology">
+    <div class="mainBox_max">
       <div class="row">
-        <div class="architectTitle">
+        <div class="technologyTitle">
           <p>Technical</p>
           <span>Architecture</span>
         </div>
         <div class="titleTip">
-          <p>Kylin Oracle provides a reliable, efficient and trustless solution for off-chain data. The protocol runs in a purely decentralized and scalable manner. Kylin Oracle, which is built on Substrate, will be connected to the Polkadot ecosystem as a parachain, sharing the underlying consensus of Polkadot. The security and network performance will be guaranteed by Polkadot and Substrate.</p>
+          <p>Kylin Network offers any applications and blockchains (such as parachains and parathreads) instantaneous but reliable and valid on/off-chain market data and social data sources by leveraging the power of Polkadot/Substrate Framework on open networks.</p>
+        </div>
+      </div>
+      <div class="items">
+        <div class="item">
+          <img src="./imgs/technology_bg_3.png" alt="">
+          <img src="./imgs/technology_bg_active_3.png" alt="">
+          <div class="text">
+            <div class="cercleIco"><span></span></div>
+            <b>Kylin Data Analytics </b>
+            is a combination of analytic tools designed for data warehouses. It provides a query engine and RESTful API for third-party applications and external analytics tools.
+          </div>
+        </div>
+        <div class="item">
+          <img src="./imgs/technology_bg_1.png" alt="">
+          <img src="./imgs/technology_bg_active_1.png" alt="">
+          <div class="text">
+            <div class="cercleIco"><span></span></div>
+            <b>Kylin Data Oracle </b>
+            is an advanced decentralized data feeding protocol powered by Polkadot/Substrate offering multiple, real-time data sources with complementarity to and synergy with off-chain workers.
+          </div>
+        </div>
+        <div class="item">
+          <img src="./imgs/technology_bg_2.png" alt="">
+          <img src="./imgs/technology_bg_active_2.png" alt="">
+          <div class="text">
+            <div class="cercleIco"><span></span></div>
+            <b>Kylin Data Marketplace </b>
+            is an open platform for data exchange and pricing. Dapps built on Polkadot can easily and efficiently collect both off-chain and on-chain data only paying a very competitive fee.
+          </div>
+        </div>
+        <div class="item">
+          <img src="./imgs/technology_bg_4.png" alt="">
+          <img src="./imgs/technology_bg_active_4.png" alt="">
+          <div class="text">
+            <div class="cercleIco"><span></span></div>
+            <b>Kylin Token $KYL </b>
+            is the native token of Kylin Network which will play the role of governance and other utilities. $KYL is necessary to secure and power the decentralized data network.
+          </div>
+        </div>
+        <div class="crossLine">
+          <div class="cross"></div>
+          <div class="vertical"></div>
+        </div>
+      </div>
+      <a href="https://wiki.kylin.network/" target="_blank" class="button">
+        <div></div>
+        <p>Read More</p>
+        <span></span>
+      </a>
+    </div>
+  </div>
+  <div class="dataOracle">
+    <div class="lineBox">
+      <div class="minLine line_1"></div>
+      <div class="minLine line_2"></div>
+      <div class="minLine line_3"></div>
+      <div class="minLine line_4"></div>
+    </div>
+    <div class="mainBox_max">
+      <div class="dataOracleTitle">
+        <h3>
+          Data<span>Oracle</span>
+        </h3>
+      </div>
+      <div class="dataOracleBanner">
+        <div class="cercleBox"></div>
+        <div class="left">
+          <p>Kylin Oracle is an advanced decentralized data feeding protocol powered by Polkadot/Substrate offering multiple, real-time data sources with the complementarity and synergy to off-chain workers.</p>
+        </div>
+        <div class="right">
+          <div class="box">
+            <!-- <img src="./imgs/technology_btn_1.png" alt=""> -->
+            <a target="_blank" href="https://polkadot.network/technology/" class="button">
+              <div></div>
+              <p>Discover Polkadot</p>
+              <span></span>
+            </a>
+          </div>
+          <div class="box">
+            <!-- <img src="./imgs/technology_btn_2.png" alt=""> -->
+            <a target="_blank" href="https://www.parity.io/substrate/" class="button">
+              <div></div>
+              <p>Discover Substrate</p>
+              <span></span>
+            </a>
+          </div>
         </div>
       </div>
       <div class="mulRow">
@@ -73,61 +180,37 @@
         <div class="minBox">
           <img src="./imgs/architect_2.svg" alt="">
           <h6>Data Warehouse</h6>
-          <p>Data Warehouse(DW) in Kylin Protocol is a decentralized on-chain repository of integrated data from one or more disparate data sources such as Oracle Nodes and the Arbitration Nodes. </p>
+          <p>Data Warehouse in Kylin Protocol is a decentralised on-chain repository of integrated data from one or more disparate data sources such as Oracle Nodes and the Arbitration Nodes. </p>
         </div>
         <div class="minBox">
           <img src="./imgs/architect_3.svg" alt="">
-          <h6>Oracle Node(Miner)</h6>
+          <h6>Oracle Node (Miner)</h6>
           <p>Oracle Node handles all the data requests such as social data and market data from separate off-chain data sources, and signing the transactions of the Kylin parachain. </p>
         </div>
         <div class="minBox">
           <img src="./imgs/architect_4.svg" alt="">
-          <h6>Arbitration Node(Arbitrator)</h6>
+          <h6>Arbitration Node (Arbitrator)</h6>
           <p>Arbitration Node guarantees the security and accuracy of external data by verifying the data integrity and the validity that Oracle Node provided. </p>
         </div>
         <div class="minBox">
           <img src="./imgs/architect_5.svg" alt="">
-          <h6>Blockchain Node(Validator)</h6>
+          <h6>Blockchain Node (Validator)</h6>
           <p>The bottom layer of Kylin Oracle is mainly built on a specialized blockchain network established by Substrate. </p>
         </div>
         <div class="minBox"></div>
       </div>
-      <a href="https://wiki.kylin.network/" target="_blank" class="button">
-        <div></div>
-        <p>Wiki</p>
-        <span></span>
-      </a>
-    </div>
-  </div>
-  <div class="technology">
-    <div class="lineBox">
-      <div class="minLine line_1"></div>
-      <div class="minLine line_2"></div>
-      <div class="minLine line_3"></div>
-      <div class="minLine line_4"></div>
-    </div>
-    <div class="mainBox_max">
-      <div class="left">
-        <p>Kylin Oracle is based on Substrate. Learn more about Polkadot’s Technology.</p>
-      </div>
-      <div class="right">
-        <div class="box">
-          <img src="./imgs/technology_btn_1.png" alt="">
-          <a target="_blank" href="https://polkadot.network/technology/" class="button">
-            <div></div>
-            <p>Discover Polkadot</p>
-            <span></span>
-          </a>
-        </div>
-        <div class="box">
-          <img src="./imgs/technology_btn_2.png" alt="">
-          <a target="_blank" href="https://www.parity.io/substrate/" class="button">
-            <div></div>
-            <p>Discover Substrate</p>
-            <span></span>
-          </a>
-        </div>
-      </div>
+      <!-- <div class="btns">
+        <a href="./Kylin-whitepaperV1.0.pdf?6" target="_blank" class="button">
+          <div></div>
+          <p>Whitepaper</p>
+          <span></span>
+        </a>
+        <a href="https://wiki.kylin.network/" target="_blank" class="button">
+          <div></div>
+          <p>Wiki</p>
+          <span></span>
+        </a>
+      </div> -->
     </div>
   </div>
   <div class="economics">
@@ -137,26 +220,31 @@
           <span>Token</span>
           <p>Economics</p>
         </div>
-        <p>The Kylin Network Mainnet token KYL is necessary to secure and power the decentralized oracle network. The use-cases and utility of KYL include:</p>
+        <p>The Kylin Network Mainnet token KYL is necessary to secure and power the decentralized data network. The use-cases and utility of KYL include but not limited to:</p>
       </div>
       <div class="rowList">
         <div>
           <img src="./imgs/economics_row_1.svg" alt="">
-          <h6>Stake to be Oracle Node<br>and Arbitrator Node: </h6>
+          <h6>Stake to be a Miner<br>or Arbitrator</h6>
           <p>All miners are required to stake KYL with a higher stake equating in a high probability of being selected to fulfill data requests. </p>
         </div>
         <div>
           <img src="./imgs/economics_row_2.svg" alt="">
           <h6>Intermediary of<br>Exchange</h6>
-          <p>Intermediary of Exchange: KYL tokens will be used to pay as a transaction, query fee, and also for data access behind paywall (private APIs).</p>
+          <p>KYL tokens will be used to pay as a transaction, query fee, and also for data access behind paywall (private APIs).</p>
         </div>
         <div>
           <img src="./imgs/economics_row_3.svg" alt="">
-          <h6>On-chain<br>Governance:</h6>
-          <p>On-chain Governance: KYL Token holders are able to vote for the protocol upgrades and parameter changes on Kylin Network. </p>
+          <h6>On-chain<br>Governance</h6>
+          <p>KYL Token holders are able to vote for the protocol upgrades and parameter changes on Kylin Network. </p>
         </div>
+        <!-- <div>
+          <img src="./imgs/economics_row_3.svg" alt="">
+          <h6>Empower Ecosystem and Community</h6>
+          <p>The security of the Kylin Network is directly related to the degree of dispersion of the system.</p>
+        </div> -->
       </div>
-      <div class="newListBox">
+      <!-- <div class="newListBox">
         <p>The KYL token economics will allow Kylin Network:</p>
         <div class="list">
           <img src="./imgs/economics_newList_1.svg" alt="">
@@ -172,7 +260,7 @@
             <p>The security of the Kylin Network is directly related to the degree of dispersion of the system.</p>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
   <div class="application">
@@ -187,48 +275,169 @@
         <div class="item active">
           <div class="title">
             <img src="./imgs/application_1.svg" alt="">
-            <h5>Decentralized insurance automatic payment</h5>
+            <h5>Decentralized Insurance Automatic Payment</h5>
           </div>
           <p>Through the Kylin Network to obtain timely and reliable events outside the insured chain, blockchain-based decentralized insurance can realize automatic payment of insurance such as flight delay insurance.</p>
         </div>
         <div class="item">
           <div class="title">
             <img src="./imgs/application_2.svg" alt="">
-            <h5>Stable coins and crypto derivatives</h5>
+            <h5>Stable Coins and Crypto Derivatives</h5>
           </div>
           <p>Stablecoins and encrypted derivatives need to frequently obtain off-chain real-time price data. Kylin Network can obtain reliable data in multiple scenarios in real time and efficiently.</p>
         </div>
         <div class="item">
           <div class="title">
             <img src="./imgs/application_3.svg" alt="">
-            <h5>Crypto asset lending platform</h5>
+            <h5>Crypto Asset Lending Platform</h5>
           </div>
           <p>Kylin Network can provide real-time and reliable currency prices and borrower’s social media information, providing strong support for the dynamic determination of loan interest rates.</p>
         </div>
         <div class="item">
           <div class="title">
             <img src="./imgs/application_4.svg" alt="">
-            <h5>Cross-chain decentralized exchange</h5>
+            <h5>Cross-chain Decentralized Exchange</h5>
           </div>
           <p>The lightweight Kylin Network interface that can be deployed on multiple chains provides the possibility for decentralized exchanges to realize cross-chain atomic transactions.</p>
         </div>
         <div class="item">
           <div class="title">
             <img src="./imgs/application_5.svg" alt="">
-            <h5>Decentralized casinos and games</h5>
+            <h5>Decentralized Casinos and Games</h5>
           </div>
           <p>On-chain decentralized casinos and games often require safe and reliable random injection. Kylin Network random number engine provides unpredictable and verifiable random number generation.</p>
         </div>
         <div class="item">
           <div class="title">
             <img src="./imgs/application_6.svg" alt="">
-            <h5>Blockchain computing market</h5>
+            <h5>Blockchain Computing Market</h5>
           </div>
           <p>Commercial computing such as machine learning training models and 3D rendering needs to complete a variety of complex computing tasks. The off-chain computing market provides verifiable and unlimited off-chain computing capabilities.</p>
         </div>
       </div>
     </div>
   </div>
+  <div class="team">
+    <div class="mainBox_max">
+      <!-- <img class="bg_img bg_1" src="./imgs/circle_1.png" alt=""> -->
+      <!-- <img class="bg_img bg_2" src="./imgs/circle_2.png" alt=""> -->
+      <!-- <img class="bg_img bg_3" src="./imgs/circle_3.png" alt=""> -->
+      <div class="teamCercle teamCercle_1"></div>
+      <div class="teamCercle teamCercle_2"></div>
+      <div class="teamCercle teamCercle_3"></div>
+      <div class="title">
+        <h5>Team Members and Advisors</h5>
+        <p>The 21-person team and advisor consist of technical, marketing and financial talent coming out of top blockchain projects, schools and employers including <b>Wharton</b>, <b>John Hopkins</b>, <b>Beam</b>, <b>TomoChain</b> and <b>Credit Suisse</b>.</p>
+      </div>
+      <div class="list">
+        <div class="item">
+          <img src="./imgs/people_Danil Myakin.png" alt="">
+          <div class="minTitleBox">
+            <h5>Dylan Dewdney</h5>
+            <a target="_blank" href="https://www.linkedin.com/in/dylan-dewdney">
+              <img src="./imgs/in_ico.svg" alt="">
+              <img src="./imgs/in_ico_hover.svg" alt="">
+            </a>
+          </div>
+          <div class="pBox">
+            <p>Dylan is a longtime crypto enthusiast (2011). In 2017 he co-founded Harbour DAO, which became an open-standard set of tools for building governance structures and voting mechanisms on ERC-20. Later, as Chief Evangelist of Beam and Head of Growth for AdEx, he was a key part of their GTM and general growth strategies. Dylan is a respected peer among many different projects and areas of business.</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./imgs/people_Beni Issembert.png" alt="">
+          <div class="minTitleBox">
+            <h5>Beni Issembert</h5>
+            <a target="_blank" href="https://www.linkedin.com/in/beniissembert">
+              <img src="./imgs/in_ico.svg" alt="">
+              <img src="./imgs/in_ico_hover.svg" alt="">
+            </a>
+          </div>
+          <div class="pBox">
+            <p>Beni Issembert is former Beam Privacy CMO, and currently works as Concordium CMO (a Proof-of-stake for businesses backed by IKEA, Volvo and Geely). He has a PHD in Philosophy of Sciences from John Hopkins and has been working in the digital world as an entrepreneur since 2005. Beni is a published author and respected thought leader in Blockchain, specifically within areas of privacy and identity.</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./imgs/people_Kyn Chaturvedi.png" alt="">
+          <div class="minTitleBox">
+            <h5>Kyn Chaturvedi</h5>
+            <a target="_blank" href="https://www.linkedin.com/in/kynchaturvedi">
+              <img src="./imgs/in_ico.svg" alt="">
+              <img src="./imgs/in_ico_hover.svg" alt="">
+            </a>
+          </div>
+          <div class="pBox">
+            <p>Kyn did dual degrees in Industrial Engineering and Economics at GIT and a few years later earned an MBA at Wharton. Kyn has been a keen observer and participant in the blockchain world since 2014 and was an early investor in TomoChain, later joining as their Chief Business Development Officer, where he currently manages all Business development strategy and implementation.</p>
+          </div>
+        </div>
+        <!-- <div class="item">
+          <img src="./imgs/people_Eric Clark Su.png" alt="">
+          <div class="minTitleBox">
+            <h5>Eric Clark Su</h5>
+            <a target="_blank" href="https://www.linkedin.com/in/ericsu/">
+              <img src="./imgs/in_ico.svg" alt="">
+              <img src="./imgs/in_ico_hover.svg" alt="">
+            </a>
+          </div>
+          <div class="pBox">
+            <p>Prolific supporter of a wide array of crypto projects, more recently, projects like DIA, Tellor and Orion Protocol. </p>
+            <p>Longtime business builder and founder, with an extremely strong core skill set of rapidly building up dev teams from scratch.</p>
+            <p>CEO of exnt.io</p>
+          </div>
+        </div> -->
+        <div class="item">
+          <img src="./imgs/people_Aaron Po.png" alt="">
+          <div class="minTitleBox">
+            <h5>Aaron Po</h5>
+          </div>
+          <div class="pBox">
+            <p>Aaron has almost a decade’s experience as a full stack developer, having honed his expertise and knowledge primarily within blockchain, building scalable systems and solutions. Aaron’s coding skillset andlaguages include: C#, Java, Rust, Go, Javascript, AWS, Kubernetes, Hadoop, HBase, etc.</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./imgs/people_Andy Zhuang.png" alt="">
+          <div class="minTitleBox">
+            <h5>Andy Zhuang</h5>
+          </div>
+          <div class="pBox">
+            <p>Andy Zhuang is an expert in the architecture and design of Defi applications and token economics, bringing with him seasoned development experience in Hyperledger, Ethereum and EOS. Andy is a Senior Software Developer and Data Scientist at Baidu.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="partners">
+    <div class="mainBox">
+      <div class="titleBox">
+        <h5>Partners</h5>
+      </div>
+      <div class="list">
+        <div class="item">
+          <img src="./imgs/application_6.svg" alt="">
+          <p>Piasdf</p>
+        </div>
+        <div class="item">
+          <img src="./imgs/application_6.svg" alt="">
+          <p>Piasdf</p>
+        </div>
+        <div class="item">
+          <img src="./imgs/application_6.svg" alt="">
+          <p>Piasdf</p>
+        </div>
+        <div class="item">
+          <img src="./imgs/application_6.svg" alt="">
+          <p>Piasdf</p>
+        </div>
+        <div class="item">
+          <img src="./imgs/application_6.svg" alt="">
+          <p>Piasdf</p>
+        </div>
+        <div class="item">
+          <img src="./imgs/application_6.svg" alt="">
+          <p>Piasdf</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
   <div class="roadMap">
     <div class="mainBox">
       <div class="titleBox">
@@ -239,64 +448,64 @@
           <div class="list">
             <div class="item">
               <div class="date">2020 Q2</div>
-              <div class="text">Proof of concept Core Protocol Prototype Establishment</div>
+              <div class="text">Proof of Concept Core Protocol Prototype Establishment</div>
+            </div>
+            <div class="item">
+              <div class="date">2020 Q3</div>
+              <div class="text">Draft and Improvement of the Whitepaper</div>
             </div>
             <div class="item">
               <div class="date">2020 Q3</div>
               <div class="text">Development & Marketing Launch</div>
             </div>
             <div class="item">
-              <div class="date">2020 Q4</div>
-              <div class="text">Smart Contract Security Audit and Public Sale</div>
+              <div class="date">2020 Q3</div>
+              <div class="text">Official Whitepaper Publish</div>
             </div>
             <div class="item">
               <div class="date">2020 Q4</div>
-              <div class="text">Private Testnet release internally </div>
+              <div class="text">Smart Contract Security Audit</div>
+            </div>
+            <!-- <div class="item">
+              <div class="date">2020 Q4</div>
+              <div class="text">Token Listed on Exchanges and Amms</div>
+            </div> -->
+            <div class="item">
+              <div class="date">2020 Q4</div>
+              <div class="text">Private Testnet Release Internally </div>
+            </div>
+            <div class="item">
+              <div class="date">2021 Q1</div>
+              <div class="text">Announce Bug Bounty Program</div>
             </div>
             <div class="item">
               <div class="date">2021 Q1</div>
               <div class="text">Mainnet Test Version Online</div>
             </div>
             <div class="item">
+              <div class="date">2021 Q2</div>
+              <div class="text">Implementing Bridges to Multiple Blockchains</div>
+            </div>
+            <div class="item">
               <div class="date">2021 Q3</div>
               <div class="text">Mainnet Version 1.0 Online</div>
+            </div>
+            <div class="item">
+              <div class="date">2021 Q3</div>
+              <div class="text">Integrating Testnet DApps and Partners to Mainnet</div>
             </div>
           </div>
           <div class="curve">
             <canvas class="ctx"></canvas>
           </div>
           <div class="list next">
-            <div class="item">
-              <div class="date">2020 Q3</div>
-              <div class="text">Draft and improvement of the whitepaper</div>
-            </div>
-            <div class="item">
-              <div class="date">2020 Q3</div>
-              <div class="text">Official Whitepaper Publish and Private Fundraising</div>
-            </div>
-            <div class="item">
-              <div class="date">2020 Q4</div>
-              <div class="text">Token Listed on Exchanges and Amms</div>
-            </div>
-            <div class="item">
-              <div class="date">2021 Q1</div>
-              <div class="text">Announce bug bounty program</div>
-            </div>
-            <div class="item">
-              <div class="date">2021 Q2</div>
-              <div class="text">Implementing bridges to multiple blockchains</div>
-            </div>
-            <div class="item">
-              <div class="date">2021 Q3</div>
-              <div class="text">Integrating Testnet DApps and partners to Mainnet</div>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div class="subscribe">
-    <p>Subscribe for Kylin's latest updates</p>
+    <!-- <p>Subscribe for Kylin's latest updates</p> -->
     <div class="mainBox">
       <input class="subscribeInp" placeholder="Join our newsletter" type="text">
       <button class="subscribeBtn">Subscribe</button>
@@ -321,6 +530,9 @@
           <a class="item" target="_blank" href="https://discord.gg/PwYCssr">
             <img src="./imgs/link_discord.svg" alt="">
           </a>
+          <a class="item" target="_blank" href="https://github.com/Kylin-Network">
+            <img src="./imgs/link_github.svg" alt="">
+          </a>
           <a class="item" target="_blank" href="https://www.linkedin.com/company/kylin-network/?viewAsMember=true">
             <img src="./imgs/link_in.svg" alt="">
           </a>
@@ -330,14 +542,27 @@
         </div>
       </div>
       <div class="right">
-        <button targetclassname="banner">Home</button>
-        <button targetclassname="architect">Technology</button>
-        <button targetclassname="economics">Tokenomics</button>
+        <button targetclassname="technology">Technology</button>
         <button>
-          <a target="_blank">Whitepaper</a>
+          <a target="_blank" href="https://wiki.kylin.network/">Docs</a>
         </button>
-        <button>
-          <a href="https://wiki.kylin.network/" target="_blank">Wiki</a>
+        <!-- <button class="menuPopBox">
+          <span>Oracle</span>
+          <b></b>
+          <div class="pop">
+            <a href="./Kylin-whitepaperV1.0.pdf?6" target="_blank">Whitepaper</a>
+            <a href="https://wiki.kylin.network/" target="_blank">Wiki</a>
+          </div>
+        </button> -->
+        <button targetclassname="economics">Token</button>
+        <button targetclassname="application">Ecosystem</button>
+        <button targetclassname="team">Team</button>
+        <button class="menuPopBox">
+          <span>Tools</span>
+          <b></b>
+          <div class="pop">
+            <a target="_blank" class="apiDocsBtn">API Docs</a>
+          </div>
         </button>
       </div>
     </div>
@@ -352,4 +577,14 @@
     </div>
   </div>
 </body>
+<script src="./js/index.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177396009-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177396009-1');
+</script>
 </html>

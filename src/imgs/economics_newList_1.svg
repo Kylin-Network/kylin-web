@@ -3,12 +3,12 @@
     <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
     <title>safe-fill</title>
     <desc>Created with Sketch.</desc>
-    <g id="page1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-dasharray="4">
-        <g id="drawingcopy-3" transform="translate(-551.000000, -3827.000000)" fill-rule="nonzero" stroke-width="4">
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-dasharray="4">
+        <g id="画板复制-3" transform="translate(-551.000000, -3827.000000)" fill-rule="nonzero" stroke-width="4">
             <g id="safe-fill" transform="translate(553.000000, 3829.000000)">
-                <g id="group-17">
-                    <path d="M50,0 L0,23.272818 L0,58.1818311 C0,90.4669642 21.2984055,120.584544 50,128 C78.7017369,120.698768 100,90.4671068 100,58.1818311 L100,23.272818 L50,0 Z" id="path" stroke="#E6007A"></path>
-                    <path d="M26,60.0046584 L45.430605,84 L76,50" id="path-13" stroke="#FFFFFF"></path>
+                <g id="编组-17">
+                    <path d="M50,0 L0,23.272818 L0,58.1818311 C0,90.4669642 21.2984055,120.584544 50,128 C78.7017369,120.698768 100,90.4671068 100,58.1818311 L100,23.272818 L50,0 Z" id="路径" stroke="#E6007A"></path>
+                    <path d="M26,60.0046584 L45.430605,84 L76,50" id="路径-13" stroke="#FFFFFF"></path>
                 </g>
             </g>
         </g>
