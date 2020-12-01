@@ -1121,8 +1121,6 @@ $divisor: 100;
         .list {
           display: flex;
           flex-wrap: wrap;
-          // justify-content: space-between;
-          justify-content: center;
           $space: r(10px);
           margin-left: -$space;
           margin-right: -$space;
