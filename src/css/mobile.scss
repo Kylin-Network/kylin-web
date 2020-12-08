@@ -1252,6 +1252,64 @@ $divisor: 100;
         }
       }
     }
+
+    .media {
+      padding-top: r(80px);
+      .mainBox {
+        padding-bottom: r(150px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .titleBox {
+          position: relative;
+          left: 0;
+          top: 0;
+          z-index: 1;
+          margin-bottom: r(142px);
+          display: inline-block;
+          &::before {
+            position: absolute;
+            left: -10%;
+            top: -30%;
+            z-index: 1;
+            content: "";
+            width: r(84px);
+            height: r(84px);
+            background-color: #E6007A;
+            border-radius: 50%;
+          }
+          h5 {
+            font-family: Avenir-Black;
+            font-size: r(72px);
+            color: #FFFFFF;
+            position: relative;
+            left: 0;
+            top: 0;
+            z-index: 2;
+          }
+        }
+        .imgBox {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .row {
+            display: flex;
+            align-items: center;
+            & + .row {
+              margin-top: r(100px);
+            }
+            > img {
+              width: auto;
+              flex: none;
+              height: r(40px);
+              & + img {
+                margin-left: r(100px);
+              }
+            }
+          }
+        }
+      }
+    }
     .roadMap {
       padding-top: r(100px);
       .mainBox {

@@ -1256,6 +1256,63 @@ $divisor: 100;
         }
       }
     }
+    .media {
+      padding-top: r(150px);
+      .mainBox {
+        padding-bottom: r(100px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .titleBox {
+          position: relative;
+          left: 0;
+          top: 0;
+          z-index: 1;
+          margin-bottom: r(120px);
+          display: inline-block;
+          &::before {
+            position: absolute;
+            left: -20%;
+            top: -30%;
+            z-index: 1;
+            content: "";
+            width: r(60px);
+            height: r(60px);
+            background-color: #E6007A;
+            border-radius: 50%;
+          }
+          h5 {
+            font-family: Avenir-Black;
+            font-size: r(44px);
+            color: #FFFFFF;
+            position: relative;
+            left: 0;
+            top: 0;
+            z-index: 2;
+          }
+        }
+        .imgBox {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .row {
+            display: flex;
+            align-items: center;
+            & + .row {
+              margin-top: r(100px);
+            }
+            > img {
+              width: auto;
+              flex: none;
+              height: r(50px);
+              & + img {
+                margin-left: r(100px);
+              }
+            }
+          }
+        }
+      }
+    }
     .roadMap {
       padding-top: r(200px);
       .mainBox {

@@ -8,7 +8,7 @@
   "license": "ISC",
   "scripts": {
     "start": "npm run dev",
-    "dev": "rm -rf ./.cache && rm -rf ./dist && parcel ./src/*.html",
+    "dev": "rm -rf ./.cache && rm -rf ./dist && parcel ./src/*.html --port=1238",
     "build": "rm -rf ./.cache ./dist ./build && parcel build ./src/*.html -d build --public-url ./ --no-source-maps --no-minify"
   },
   "dependencies": {},
