@@ -1298,6 +1298,7 @@ $divisor: 100;
           .row {
             display: flex;
             align-items: center;
+            width: 100%;
             & + .row {
               margin-top: r(100px);
             }
