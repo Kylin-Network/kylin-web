@@ -42,6 +42,7 @@ $divisor: 100;
   body {
     background-color: #000;
     color: #fff;
+    $topLineBoxHeight: r(43px);
     .toast-box div {
       max-width: 90%;
       border-radius: r(100px);
@@ -183,6 +184,9 @@ $divisor: 100;
         padding: r(10px) 0;
         display: none;
         opacity: 0;
+        &.big {
+          width: r(200px);
+        }
         > a, > span {
           font-size: r(18px);
           display: block;
@@ -204,6 +208,44 @@ $divisor: 100;
       transition: 0.3s;
       &.up {
         top: r(-58px);
+      }
+      .topLineBox {
+        width: 100%;
+        background-color: #ED007E;
+        transition: all 0.3s;
+        height: $topLineBoxHeight;
+        overflow: hidden;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 0;
+        top: 0;
+        &.hide {
+          height: 0px;
+        }
+        p {
+          width: 100%;
+          padding: 0 r(20px);
+          text-align: center;
+          &, a {
+            font-family: Avenir-Heavy;
+            color: #FFFFFF;
+            font-size: r(18px);
+          }
+          a {
+            text-decoration: underline;
+          }
+        }
+        .closeX {
+          position: absolute;
+          right: r(20px);
+          top: 45%;
+          transform: translateY(-50%);
+          font-size: r(24px);
+          padding: r(5px);
+          cursor: pointer;
+        }
       }
       .headerTop {
         border-bottom: 1px solid #333;
@@ -227,12 +269,11 @@ $divisor: 100;
         }
       }
       .header {
-        height: r(95px);
         .mainBox_max {
+          height: r(95px);
           display: flex;
           align-items: center;
           justify-content: space-between;
-          height: 100%;
           .left {
             a {
               img {
@@ -303,7 +344,7 @@ $divisor: 100;
       z-index: -1;
     }
     .banner {
-      margin-top: r(100px);
+      margin-top: r(100px) + $topLineBoxHeight;
       display: flex;
       flex-direction: column;
       // align-items: center;
@@ -311,6 +352,10 @@ $divisor: 100;
       box-sizing: border-box;
       // height: calc(100vh - r(153px));
       height: 100vh;
+      transition: margin-top 0.3s;
+      &.hideTopBar {
+        margin-top: r(100px);
+      }
       // img {
       //   height: r(100px);
       // }
@@ -1251,6 +1296,72 @@ $divisor: 100;
             > p {
               padding-top: r(30px);
               white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+
+    .investors {
+      padding-top: r(150px);
+      .mainBox {
+        padding-bottom: r(100px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .titleBox {
+          position: relative;
+          left: 0;
+          top: 0;
+          z-index: 1;
+          margin-bottom: r(120px);
+          display: inline-block;
+          &::before {
+            position: absolute;
+            left: -5%;
+            top: -30%;
+            z-index: 1;
+            content: "";
+            width: r(60px);
+            height: r(60px);
+            background-color: #E6007A;
+            border-radius: 50%;
+          }
+          h5 {
+            font-family: Avenir-Black;
+            font-size: r(44px);
+            color: #FFFFFF;
+            position: relative;
+            left: 0;
+            top: 0;
+            z-index: 2;
+          }
+        }
+        .imgBox {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          transform: scale(1.05);
+          .row {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            & + .row {
+              margin-top: r(100px);
+            }
+            span {
+              flex: none;
+              width: 20%;
+              // cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              > img {
+                width: auto;
+                flex: none;
+                height: r(60px);
+              }
             }
           }
         }

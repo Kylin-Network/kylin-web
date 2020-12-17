@@ -53,6 +53,7 @@ $divisor: 100;
   body {
     background-color: #000;
     color: #fff;
+    $topLineBoxHeight: r(100px);
     .toast-box div {
       max-width: 90%;
       border-radius: r(100px);
@@ -137,6 +138,45 @@ $divisor: 100;
       &.up {
         top: r(-58px);
       }
+      .topLineBox {
+        width: 100%;
+        background-color: #ED007E;
+        transition: all 0.3s;
+        height: $topLineBoxHeight;
+        overflow: hidden;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 0;
+        top: 0;
+        &.hide {
+          height: 0px;
+        }
+        p {
+          width: 100%;
+          padding: 0 r(90px);
+          text-align: center;
+          line-height: 1.4em;
+          &, a {
+            font-family: Avenir-Heavy;
+            color: #FFFFFF;
+            font-size: r(30px);
+          }
+          a {
+            text-decoration: underline;
+          }
+        }
+        .closeX {
+          position: absolute;
+          right: r(20px);
+          top: 45%;
+          transform: translateY(-50%);
+          font-size: r(50px);
+          padding: r(20px);
+          cursor: pointer;
+        }
+      }
       .headerTop {
         border-bottom: 1px solid #333;
         height: r(48px);
@@ -160,12 +200,11 @@ $divisor: 100;
       }
       .header {
         $height: r(150px);
-        height: $height;
         .mainBox_max {
+          height: $height;
           display: flex;
           align-items: center;
           justify-content: space-between;
-          height: 100%;
           position: relative;
           left: 0;
           top: 0;
@@ -222,6 +261,9 @@ $divisor: 100;
                 &.show {
                   .pop {
                     height: $fontSize * 3 * 2;
+                    &.big {
+                      height: $fontSize * 3 * 4;
+                    }
                   }
                 }
                 > span {
@@ -320,9 +362,13 @@ $divisor: 100;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding-top: r(400px);
+      padding-top: r(400px) + $topLineBoxHeight;
       box-sizing: border-box;
       min-height: 90vh;
+      transition: padding-top 0.3s;
+      &.hideTopBar {
+        padding-top: r(400px);
+      }
       img {
         height: r(164px);
       }
@@ -1253,6 +1299,70 @@ $divisor: 100;
       }
     }
 
+    .investors {
+      padding-top: r(80px);
+      .mainBox {
+        padding-bottom: r(150px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .titleBox {
+          position: relative;
+          left: 0;
+          top: 0;
+          z-index: 1;
+          margin-bottom: r(142px);
+          display: inline-block;
+          &::before {
+            position: absolute;
+            left: -5%;
+            top: -30%;
+            z-index: 1;
+            content: "";
+            width: r(84px);
+            height: r(84px);
+            background-color: #E6007A;
+            border-radius: 50%;
+          }
+          h5 {
+            font-family: Avenir-Black;
+            font-size: r(72px);
+            color: #FFFFFF;
+            position: relative;
+            left: 0;
+            top: 0;
+            z-index: 2;
+          }
+        }
+        .imgBox {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          .row {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            & + .row {
+              margin-top: r(100px);
+            }
+            span {
+              flex: none;
+              width: 20%;
+              // cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              > img {
+                width: auto;
+                flex: none;
+                height: r(49px);
+              }
+            }
+          }
+        }
+      }
+    }
     .media {
       padding-top: r(80px);
       .mainBox {
