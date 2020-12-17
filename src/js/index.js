@@ -100,6 +100,14 @@ function bindEvent() {
     $(this).addClass('active')
   })
 
+  { // 顶部色条字的关闭
+    $('.closeX').on('click', () => {
+      $('.topLineBox').addClass('hide')
+      $('.banner').addClass('hideTopBar')
+    })
+
+  }
+
   { // menuPopBox ,url
     let $apiDocsBtn = $('.menuPopBox .pop .apiDocsBtn')
     let origin = window.location.origin
