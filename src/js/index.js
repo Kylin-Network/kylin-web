@@ -100,7 +100,7 @@ function bindEvent() {
     $(this).addClass('active')
   })
 
-  { // 顶部色条字的关闭
+  { // Top color bar word close
     $('.closeX').on('click', () => {
       $('.topLineBox').addClass('hide')
       $('.banner').addClass('hideTopBar')
