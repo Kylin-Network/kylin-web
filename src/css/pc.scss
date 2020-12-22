@@ -154,7 +154,7 @@ $divisor: 100;
         }
         > b {
           border-top-color:  #ED007E;
-          transform: translateY(r(3px)) rotate(-90deg);
+          transform: rotate(-90deg);
         }
         .pop {
           display: block;
@@ -169,9 +169,9 @@ $divisor: 100;
         border-color: #fff transparent transparent transparent;
         border-style: solid;
         margin-left: r(10px);
-        transform: translateY(r(3px));
+        // transform: translateY(r(3px));
         transition: transform 0.5s;
-        // transform-origin: left 80%;
+        // transform-origin: center 50%;
       }
       .pop {
         position: absolute;
