@@ -41,7 +41,6 @@ $(() => {
   bindEvent()
 })
 
-// 
 function setTipBox() {
   let $tipBox = $('.tipBox')
   if ($tipBox.length) data.$tipBox = $tipBox
@@ -54,20 +53,17 @@ function setTipBox() {
   }
 }
 
-// 
 function setBg() {
   canvasBg({
     dom: document.querySelector('.bgAnimate')
   })
 }
 
-// 
 function setCanvasLine() {
   {
     let $allItem = $('.roadMap .mainCon .list:not(.next) .item')
     let $nextList = $('.roadMap .mainCon .list.next')
     for (let i = 0; i < $allItem.length; i++) {
-      // ,
       if (i % 2) $nextList.append($($allItem[i]))
     }
     let width = document.body.clientWidth
@@ -92,7 +88,6 @@ function setCanvasLine() {
   }
 }
 
-// 
 function bindEvent() {
   let $items = $('.application .list .item')
   $items.on('mouseenter', function() {
@@ -121,10 +116,10 @@ function bindEvent() {
     let clickBtn = false
     $hamburger.on('click', function() {
       if (!data.isMobile) return
-      if ($hamburger.hasClass('is-active')) { // ,
+      if ($hamburger.hasClass('is-active')) {
         clickBtn = false
         $headRight.css({display: 'none'})
-      } else { // ,
+      } else {
         clickBtn = true
         $headRight.css({display: 'flex'})
       }
@@ -134,7 +129,7 @@ function bindEvent() {
       let $oracle = $('.headBox .header .right .menuPopBox')
       $oracle.on('click', function(e) {
         let $this = $(this)
-        if ($this.hasClass('show')) { // ,
+        if ($this.hasClass('show')) {
           $this.removeClass('show')
         } else {
           $this.addClass('show')
@@ -386,7 +381,6 @@ function windowScroll() {
   }
 }
 
-// 
 function scrollSmoothTo(position, doms, btnDom, clickScrollBtnId, obj) {
   if (clickScrollBtnId !== data.clickScrollBtnId) return
  
