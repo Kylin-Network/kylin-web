@@ -240,7 +240,6 @@ function bindEvent() {
       }
     }
 
-   
     function getScrollWidth() {  
       var noScroll, scroll, oDiv = document.createElement("DIV");  
       oDiv.style.cssText = "position:absolute; top:-1000px; width:100px; height:100px; overflow:hidden;";  
@@ -279,7 +278,6 @@ function addResizeWatch() {
   }
 }
 
-// 
 function setHeaderBoxHeight() {
   data.headerBoxHeight = Math.ceil($('.header').height() || 0) - 2
   if ($('.headerTop').length) data.headerTopHeightHarf = ($('.headerTop').height() || 0) / 2
