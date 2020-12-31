@@ -983,13 +983,11 @@ $divisor: 100;
     .application {
       padding-top: r(300px);
       .mainBox_max {
-        // width: r(938px);
         .bgBox {
           padding-bottom: r(100px);
           div {
             display: flex;
             flex-direction: column;
-            // align-items: center;
             span, p {
               font-size: r(72px);
               font-family: Avenir-Black;
