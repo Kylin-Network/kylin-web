@@ -64,11 +64,16 @@ $divisor: 100;
       @media (max-width: 1100px) {
         width: 800px;
       }
+      // @media (max-width: 1000px) {
+      //   width: 700px;
+      // }
     }
     .mainBox {
       width: r(1110px);
+      // min-width: 850px;
       margin-left: auto;
       margin-right: auto;
+      // overflow-x: hidden;
       @media (max-width: 1300px) {
         width: 1000px;
       }
@@ -78,6 +83,9 @@ $divisor: 100;
       @media (max-width: 1100px) {
         width: 700px;
       }
+      // @media (max-width: 1000px) {
+      //   width: 600px;
+      // }
     }
     .button {
       display: flex;
@@ -161,7 +169,9 @@ $divisor: 100;
         border-color: #fff transparent transparent transparent;
         border-style: solid;
         margin-left: r(10px);
+        // transform: translateY(r(3px));
         transition: transform 0.5s;
+        // transform-origin: center 50%;
       }
       .pop {
         position: absolute;
@@ -436,6 +446,12 @@ $divisor: 100;
           font-family: Avenir-Heavy;
           font-size: r(22px);
           color: #ED007E;
+          margin-top: r(10px);
+        }
+        img {
+          margin-top: r(10px);
+          margin-left: r(150px);
+          height: r(60px);
         }
       }
     }
@@ -1162,7 +1178,7 @@ $divisor: 100;
           .item {
             flex: none;
             width: r(420px);
-            height: r(440px);
+            height: r(452px);
             margin-left: $space;
             margin-right: $space;
             box-sizing: border-box;
@@ -1183,21 +1199,32 @@ $divisor: 100;
             .minTitleBox {
               display: flex;
               align-items: center;
-              padding: r(23px) 0 r(28px);
+              padding: r(23px) 0 r(40px);
+              position: relative;
+              left: 0;
+              top: 0;
               h5 {
                 font-family: Avenir-Heavy;
                 font-size: r(24px);
                 color: #FFFFFF;
                 white-space: nowrap;
-                margin-right: r(15px);
                 position: relative;
                 left: 0;
                 top: 0;
+                p {
+                  position: absolute;
+                  left: 50%;
+                  bottom: r(-6px);
+                  // bottom: 0;
+                  transform: translate(-50%, 100%);
+                  line-height: 1em;
+                  font-size: r(14px);
+                }
                 &::after {
                   position: absolute;
                   left: 50%;
                   transform: translateX(-50%);
-                  bottom: r(-15px);
+                  bottom: r(-30px);
                   height: 1px;
                   width: r(43px);
                   content: "";
@@ -1205,6 +1232,10 @@ $divisor: 100;
                 }
               }
               a {
+                position: absolute;
+                right: r(-15px);
+                top: r(23px);
+                transform: translate(100%, 0);
                 &:hover > img {
                   &:nth-child(1) {
                     display: none;
@@ -1291,7 +1322,6 @@ $divisor: 100;
         }
       }
     }
-
     .investors {
       padding-top: r(150px);
       .mainBox {
@@ -1403,12 +1433,15 @@ $divisor: 100;
             & + .row {
               margin-top: r(100px);
             }
-            > img {
-              width: auto;
-              flex: none;
-              height: r(50px);
-              & + img {
+            a {
+              cursor: pointer;
+              & + a {
                 margin-left: r(100px);
+              }
+              > img {
+                width: auto;
+                flex: none;
+                height: r(45px);
               }
             }
           }
@@ -1577,13 +1610,23 @@ $divisor: 100;
     .footer {
       .mainBox_max {
         height: r(337px);
+        padding-bottom: r(20px);
+        box-sizing: content-box;
         display: flex;
         justify-content: space-between;
         align-items: center;
         .left {
-          > img {
-            height: r(60px);
-            width: auto;
+          .imgBox {
+            > img:nth-child(1) {
+              height: r(60px);
+              width: auto;
+            }
+            > img:nth-child(2) {
+              transform: translateY(-13%);
+              height: r(55px);
+              width: auto;
+              margin-left: r(59px);
+            }
           }
           p {
             opacity: 0.56;
@@ -1603,11 +1646,31 @@ $divisor: 100;
               display: flex;
               align-items: center;
               justify-content: center;
+              position: relative;
+              left: 0;
+              top: 0;
+              cursor: pointer;
               & + .item {
                 margin-left: r(22px);
               }
               &:hover {
                 background-color: #E6007A;
+                .pop {
+                  display: block;
+                }
+              }
+              .pop {
+                display: none;
+                padding: r(3px);
+                background-color: #fff;
+                position: absolute;
+                left: 50%;
+                top: r(-10px);
+                transform: translate(-50%, -100%);
+                > img {
+                  width: r(150px);
+                  height: r(150px);
+                }
               }
               img {
                 height: r(23px);
@@ -1617,26 +1680,45 @@ $divisor: 100;
           }
         }
         .right {
-          display: flex;
-          align-items: center;
-          height: r(50px);
-          button {
-            font-family: Avenir-Medium;
-            font-size: r(20px);
-            color: #FFFFFF;
-            &, & span {
-              line-height: 2em;
-            }
-            &.menuPopBox .pop {
-              bottom: 0;
-            }
-            &:not(.menuPopBox):hover {
-              color: #ED007E;
-            }
-            & + button {
-              margin-left: r(40px);
+          padding-left: r(200px);
+          font-family: Avenir-Book;
+          color: #4c4c4c;
+          margin-bottom: r(10px);
+          h6 {
+            font-size: r(16px);
+            padding-bottom: r(20px);
+            &::after {
+              content: "";
+              display: block;
+              width: r(30px);
+              height: 2px;
+              background-color: #4c4c4c;
+              margin-top: r(15px);
             }
           }
+          p {
+            font-size: r(14px);
+            line-height: 1.5em;
+          }
+          // align-items: center;
+          // height: r(50px);
+          // button {
+          //   font-family: Avenir-Medium;
+          //   font-size: r(20px);
+          //   color: #FFFFFF;
+          //   &, & span {
+          //     line-height: 2em;
+          //   }
+          //   &.menuPopBox .pop {
+          //     bottom: 0;
+          //   }
+          //   &:not(.menuPopBox):hover {
+          //     color: #ED007E;
+          //   }
+          //   & + button {
+          //     margin-left: r(40px);
+          //   }
+          // }
         }
       }
     }

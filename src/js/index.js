@@ -13,7 +13,7 @@ let data = {
   headerBoxHeight: 0,
   isAutoScroll: false,
   lastWidth: undefined,
-  clickScrollBtnId: undefined, // id
+  clickScrollBtnId: undefined,
   innerHeight: undefined,
   inBottom: false,
   headerTopHeightHarf: 0,
@@ -21,25 +21,27 @@ let data = {
   topSpaceArr: [],
   $headBox: null,
   doms: null,
-  $tipBox: null, // dom
-  tipBoxSpaceTop: 300, //  (px)
+  $tipBox: null,
+  tipBoxSpaceTop: 300,
+  lastHeight: 0,
 }
 
 $(() => {
 
   setBg()
   setCanvasLine()
- 
+
   setTipBox()
- 
+
   setHeaderBoxHeight()
-  // window
+
   addResizeWatch()
-  //  + window
+
   setScrollBtn()
- 
+
   bindEvent()
 })
+
 
 function setTipBox() {
   let $tipBox = $('.tipBox')
@@ -53,17 +55,20 @@ function setTipBox() {
   }
 }
 
+
 function setBg() {
   canvasBg({
     dom: document.querySelector('.bgAnimate')
   })
 }
 
+
 function setCanvasLine() {
-  {
+  { 
     let $allItem = $('.roadMap .mainCon .list:not(.next) .item')
     let $nextList = $('.roadMap .mainCon .list.next')
     for (let i = 0; i < $allItem.length; i++) {
+      
       if (i % 2) $nextList.append($($allItem[i]))
     }
     let width = document.body.clientWidth
@@ -95,7 +100,7 @@ function bindEvent() {
     $(this).addClass('active')
   })
 
-  { // Top color bar word close
+  {
     $('.closeX').on('click', () => {
       $('.topLineBox').addClass('hide')
       $('.banner').addClass('hideTopBar')
@@ -103,7 +108,7 @@ function bindEvent() {
 
   }
 
-  { // menuPopBox ,url
+  {
     let $apiDocsBtn = $('.menuPopBox .pop .apiDocsBtn')
     let origin = window.location.origin
     if (origin.indexOf('jar.today') > -1 || origin.indexOf('http:') > -1 ) $apiDocsBtn.attr('href', API_URL.test)
@@ -176,7 +181,7 @@ function bindEvent() {
       })
       return
     }
-    let reg = new RegExp("^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$"); 
+    let reg = new RegExp("^[a-zA-Z.0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$"); 
     if (!reg.test(email)) {
       toast({
         type: 'warn',
@@ -185,7 +190,7 @@ function bindEvent() {
       return
     }
     $.ajax({
-      url: `https://api.kylin.network/saveEmail?email=` + email
+      url: `https://internal.kylin.network/saveEmail?email=` + email
     }).then(result => {
       try {
         result = JSON.parse(result)
@@ -209,37 +214,38 @@ function bindEvent() {
 
 
   {
-   
+    // 
     let $popPage = $('.popPage')
     let $popPageBox = $('.popPage').find('.box')
     let $video = $popPage.find('video')
 
-    $video.remove()
+    $video.remove() // 
     if ($popPage[0]) {
-     
+      // 
       $('.banner .btn .btnBox').on('click', () => {
         $video.attr('src', $video.attr('data_src'))
-        $video[0].currentTime = 0
+        $video[0].currentTime = 0 // 
         $popPageBox.append($video)
         $popPage.addClass('active')
         $video[0].play()
-        
+         // 
          $('html').css({'margin-right': getScrollWidth(), 'overflow': 'hidden'})
       })
     
-     
+      // 
       $('.popPage .shadow').on('click', closePopPage);
       $('.popPage .box .close').on('click', closePopPage);
     
       // pop
       function closePopPage() {
-        $video.remove()
+        $video.remove() // 
         $popPage.removeClass('active')
-       
+        // 
         $('html').css({'margin-right': 0, 'overflow': 'auto'})
       }
     }
 
+    // 
     function getScrollWidth() {  
       var noScroll, scroll, oDiv = document.createElement("DIV");  
       oDiv.style.cssText = "position:absolute; top:-1000px; width:100px; height:100px; overflow:hidden;";  
@@ -261,16 +267,16 @@ function addResizeWatch() {
     var width = document.body.clientWidth
     data.isMobile = width < 900
     data.innerHeight = window.innerHeight
-   
+    // 
     if (data.lastWidth !== width) {
       if (data.doms) {
         for (let i = 0; i < data.doms.length; i++) {
           $(data.doms[i]).css({width: 'auto'})
         }
       }
-     
+      // 
       setHeaderBoxHeight()
-      //  + window
+      //  + window，
       setScrollBtn()
       data.scrollTop = (document.documentElement.scrollTop || document.body.scrollTop)
     }
@@ -278,16 +284,19 @@ function addResizeWatch() {
   }
 }
 
+// 
 function setHeaderBoxHeight() {
   data.headerBoxHeight = Math.ceil($('.header').height() || 0) - 2
   if ($('.headerTop').length) data.headerTopHeightHarf = ($('.headerTop').height() || 0) / 2
 }
 
-//  + window
+//  + window，
 function setScrollBtn() {
   setTimeout(() => {
     data.doms = document.querySelectorAll('.header .right button[targetclassname]')
     data.$headBox = $('.headBox')
+    // 
+    data.lastHeight = document.querySelector('.media').offsetTop - data.headerBoxHeight
     $(window).off('scroll', windowScroll)
     $(window).on('scroll', windowScroll)
     if (!data.doms || !data.doms.length) return
@@ -314,7 +323,7 @@ function setScrollBtn() {
       for (let i = 0; i < inDoms.length; i++) {
         inDoms[i].onclick = judge
       }
-     
+      // 
       function judge() {
         let targetClassName = this.getAttribute('targetclassname')
         if (!targetClassName) return
@@ -343,14 +352,14 @@ function windowScroll() {
     if (scrollTop >= data.headerTopHeightHarf && !data.$headBox.hasClass('up')) data.$headBox.addClass('up')
     else if (scrollTop < data.headerTopHeightHarf && data.$headBox.hasClass('up')) data.$headBox.removeClass('up')
   }
-  if (data.isAutoScroll) return
+  if (data.isAutoScroll) return // ，
   if (data.topSpaceArr && data.topSpaceArr.length) {
     let find = false
     for (var i = 0; i < data.topSpaceArr.length; i++) {
       var obj = data.topSpaceArr[i]
       var targetSpace = obj.targetSpace
-      if (targetSpace <= scrollTop) {
-        if (!data.topSpaceArr[i + 1] || data.topSpaceArr[i + 1].targetSpace > scrollTop) {
+      if (data.lastHeight > scrollTop && targetSpace <= scrollTop) { // 
+        if (!data.topSpaceArr[i + 1] || data.topSpaceArr[i + 1].targetSpace > scrollTop) { // ，，
           if (!obj.btnDom.classList.contains('active')) {
             for (var i = 0; i < data.doms.length; i++) {
               data.doms[i].classList.remove('active')
@@ -365,13 +374,13 @@ function windowScroll() {
           find = true
           break
         }
-      } else {
+      } else { // 
         if (obj.btnDom.classList.contains('active')) {
           data.doms[i].classList.remove('active')
         }
       }
     }
-    if (!find) {
+    if (!find) { // 
       let $flagLine = $('.flagLine')
       $flagLine.css({width: 0, left: 0})
       $flagLine.attr({data_width: 0, data_left: 0})
@@ -379,9 +388,10 @@ function windowScroll() {
   }
 }
 
+// 
 function scrollSmoothTo(position, doms, btnDom, clickScrollBtnId, obj) {
   if (clickScrollBtnId !== data.clickScrollBtnId) return
- 
+  // 
   for (var i = 0; i < doms.length; i++) {
     doms[i].classList.remove('active')
   }
@@ -397,14 +407,14 @@ function scrollSmoothTo(position, doms, btnDom, clickScrollBtnId, obj) {
       setTimeout(callback, 20)
     }
   }
- 
+  // 
   var scrollTop = document.documentElement.scrollTop || document.body.scrollTop
   // step
   var step = function() {
     if (clickScrollBtnId !== data.clickScrollBtnId) return
-   
+    // 
     var distance = position - scrollTop
-   
+    // 
     var space = distance / 10
     space > 0 && space < 3 ? space = 3 : ''
     space < 0 && space > -3 ? space = -3 : ''
