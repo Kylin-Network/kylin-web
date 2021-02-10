@@ -1,12 +1,13 @@
 import $ from '../plugins/jquery-3.5.1.min';
-let itemXArr = []
+let itemXArr = [] // 
 export default function(obj) {
   let { parentDom, isMobile } = obj
 
-  let $parentDom = $(parentDom)
-  let width_parentDom = $parentDom.width(), height_parentDom = $parentDom.height() // 
+  // dom
+  let $parentDom = $(parentDom) // dom
+  let width_parentDom = $parentDom.width(), height_parentDom = $parentDom.height() // dom
   if (isMobile) {
-    var tempHeight = $parentDom.parent().height() // 
+    var tempHeight = $parentDom.parent().height() // dom
 
     height_parentDom = width_parentDom
     width_parentDom = tempHeight
@@ -14,6 +15,7 @@ export default function(obj) {
 
   let $dom = $parentDom.children('canvas')
 
+  // 
   let width = width_parentDom * 2, height = height_parentDom * 2
 
   $dom.attr('width', width)
@@ -31,15 +33,17 @@ export default function(obj) {
     itemXArr.push(temp)
   }
 
+  // 
   drow({
     ctx,
-    lineWidth: 0.03,
-    lineColor: [230, 0, 122],
+    lineWidth: 0.03, //  
+    lineColor: [230, 0, 122], // 
     width,
     height,
   })
 }
 
+// 
 function drow(params) {
   let {
     ctx,
@@ -60,9 +64,10 @@ function drow(params) {
   let condition = true, colorRGB = lineColor.join(','), widthHarf = width / 2
   let minOpacity = 0.01
 
-  let allPointArr = []
+  let allPointArr = [] // 
   while (condition) {
     let temp_y = height / 2 + Math.sin(x/120) * center_y
+    // ,1,0.26
     let opacity
     if (x < widthHarf) opacity = minOpacity + (1 - minOpacity) * (x / widthHarf)
     else opacity = 1 - (1 - minOpacity) * ((x - widthHarf) / widthHarf)
@@ -71,6 +76,7 @@ function drow(params) {
     ctx.arc(x, temp_y, lineWidth / 2, 0, Math.PI * 2);
     ctx.fill();
 
+    // 
     allPointArr.push([x, temp_y])
     ctx.closePath();
 
@@ -78,6 +84,7 @@ function drow(params) {
     if (x > width) break
   }
 
+  // 
   for (let i = itemXArr.length - 1; i >= 0; i--) {
     let index = -1
     for (let j = 0; j < allPointArr.length; j++) {
@@ -90,11 +97,13 @@ function drow(params) {
     if (index >= 0) {
       ctx.beginPath();
       itemXArr.splice(index, 1)
+      // 
       ctx.fillStyle = `#ffffff`
       ctx.arc(allPointArr[index][0], allPointArr[index][1], lineWidth * 1.6, 0, Math.PI * 2);
       ctx.fill();
       ctx.closePath();
   
+      // 
       ctx.beginPath();
       ctx.fillStyle = `rgba(${colorRGB}, 1)`
       ctx.arc(allPointArr[index][0], allPointArr[index][1], lineWidth * 1.1, 0, Math.PI * 2);

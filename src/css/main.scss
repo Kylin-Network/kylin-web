@@ -39,17 +39,20 @@ html, body {
   min-height: 100vh;
 }
 
+// rem
 html {
   font-size: calc(100 * (100vw / 1920));
 }
 
 @media (max-width: 1160px) {
+  // rem
   html {
     font-size: calc(100 * (1160px / 1920));
   }
 }
 
 @media (max-width: 900px) {
+  // rem
   html {
     font-size: calc(100 * (100vw / 1080));
   }

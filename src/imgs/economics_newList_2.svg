@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="117px" height="120px" viewBox="0 0 117 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
-    <title>编组 18</title>
+    <title> 18</title>
     <desc>Created with Sketch.</desc>
-    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-dasharray="4">
-        <g id="画板复制-3" transform="translate(-538.000000, -4064.000000)" fill-rule="nonzero" stroke-width="4">
-            <g id="编组-18" transform="translate(540.000000, 4066.000000)">
-                <path d="M91,34 C100.388841,34 108,26.3888407 108,17 C108,7.61115925 100.388841,0 91,0 C81.6111593,0 74,7.61115925 74,17 C74,26.3888407 81.6111593,34 91,34 Z" id="椭圆形" stroke="#E6007A"></path>
-                <path d="M19,69 C29.4934102,69 38,60.4934102 38,50 C38,39.5065898 29.4934102,31 19,31 C8.50658975,31 0,39.5065898 0,50 C0,60.4934102 8.50658975,69 19,69 Z" id="椭圆形复制-15" stroke="#E6007A"></path>
-                <path d="M88,116 C101.807119,116 113,104.807119 113,91 C113,77.1928813 101.807119,66 88,66 C74.1928813,66 63,77.1928813 63,91 C63,104.807119 74.1928813,116 88,116 Z" id="椭圆形复制-16" stroke="#E6007A"></path>
-                <path d="M76,31 L41,46" id="路径-16" stroke="#FFFFFF"></path>
-                <path d="M35,62 L64,79.59375" id="路径-17" stroke="#FFFFFF"></path>
-                <path d="M89,34 L88,66" id="路径-18" stroke="#FFFFFF"></path>
+    <g id="1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-dasharray="4">
+        <g id="-3" transform="translate(-538.000000, -4064.000000)" fill-rule="nonzero" stroke-width="4">
+            <g id="-18" transform="translate(540.000000, 4066.000000)">
+                <path d="M91,34 C100.388841,34 108,26.3888407 108,17 C108,7.61115925 100.388841,0 91,0 C81.6111593,0 74,7.61115925 74,17 C74,26.3888407 81.6111593,34 91,34 Z" id="" stroke="#E6007A"></path>
+                <path d="M19,69 C29.4934102,69 38,60.4934102 38,50 C38,39.5065898 29.4934102,31 19,31 C8.50658975,31 0,39.5065898 0,50 C0,60.4934102 8.50658975,69 19,69 Z" id="-15" stroke="#E6007A"></path>
+                <path d="M88,116 C101.807119,116 113,104.807119 113,91 C113,77.1928813 101.807119,66 88,66 C74.1928813,66 63,77.1928813 63,91 C63,104.807119 74.1928813,116 88,116 Z" id="-16" stroke="#E6007A"></path>
+                <path d="M76,31 L41,46" id="-16" stroke="#FFFFFF"></path>
+                <path d="M35,62 L64,79.59375" id="-17" stroke="#FFFFFF"></path>
+                <path d="M89,34 L88,66" id="-18" stroke="#FFFFFF"></path>
             </g>
         </g>
     </g>

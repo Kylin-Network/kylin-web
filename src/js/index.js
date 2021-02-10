@@ -10,39 +10,39 @@ const API_URL = {
 
 let data = {
   isMobile: false,
-  headerBoxHeight: 0,
-  isAutoScroll: false,
+  headerBoxHeight: 0, // 
+  isAutoScroll: false, // 
   lastWidth: undefined,
-  clickScrollBtnId: undefined,
-  innerHeight: undefined,
-  inBottom: false,
-  headerTopHeightHarf: 0,
-  scrollTop: 0,
+  clickScrollBtnId: undefined, // ，id
+  innerHeight: undefined, // ，
+  inBottom: false, // 
+  headerTopHeightHarf: 0, // 
+  scrollTop: 0, // 
   topSpaceArr: [],
   $headBox: null,
   doms: null,
-  $tipBox: null,
-  tipBoxSpaceTop: 300,
-  lastHeight: 0,
+  $tipBox: null, // dom
+  tipBoxSpaceTop: 300, //  (px)
+  lastHeight: 0, // ,
 }
 
 $(() => {
 
-  setBg()
-  setCanvasLine()
-
+  setBg() // 
+  setCanvasLine() // 
+  // 
   setTipBox()
-
+  // 
   setHeaderBoxHeight()
-
+  // window
   addResizeWatch()
-
+  //  + window，
   setScrollBtn()
-
+  // 
   bindEvent()
 })
 
-
+// 
 function setTipBox() {
   let $tipBox = $('.tipBox')
   if ($tipBox.length) data.$tipBox = $tipBox
@@ -55,20 +55,20 @@ function setTipBox() {
   }
 }
 
-
+// 
 function setBg() {
   canvasBg({
     dom: document.querySelector('.bgAnimate')
   })
 }
 
-
+// 
 function setCanvasLine() {
-  { 
+  { // 
     let $allItem = $('.roadMap .mainCon .list:not(.next) .item')
     let $nextList = $('.roadMap .mainCon .list.next')
     for (let i = 0; i < $allItem.length; i++) {
-      
+      // ,
       if (i % 2) $nextList.append($($allItem[i]))
     }
     let width = document.body.clientWidth
@@ -93,6 +93,7 @@ function setCanvasLine() {
   }
 }
 
+// 
 function bindEvent() {
   let $items = $('.application .list .item')
   $items.on('mouseenter', function() {
@@ -100,7 +101,7 @@ function bindEvent() {
     $(this).addClass('active')
   })
 
-  {
+  { // 
     $('.closeX').on('click', () => {
       $('.topLineBox').addClass('hide')
       $('.banner').addClass('hideTopBar')
@@ -108,23 +109,23 @@ function bindEvent() {
 
   }
 
-  {
+  { // menuPopBox ,url
     let $apiDocsBtn = $('.menuPopBox .pop .apiDocsBtn')
     let origin = window.location.origin
     if (origin.indexOf('jar.today') > -1 || origin.indexOf('http:') > -1 ) $apiDocsBtn.attr('href', API_URL.test)
     else $apiDocsBtn.attr('href', API_URL.pro)
   }
 
-  {
+  { // 
     let $headRight = $('.headBox .header .right')
     let $hamburger = $('.hamburger')
     let clickBtn = false
     $hamburger.on('click', function() {
       if (!data.isMobile) return
-      if ($hamburger.hasClass('is-active')) {
+      if ($hamburger.hasClass('is-active')) { // ,
         clickBtn = false
         $headRight.css({display: 'none'})
-      } else {
+      } else { // ,
         clickBtn = true
         $headRight.css({display: 'flex'})
       }
@@ -134,7 +135,7 @@ function bindEvent() {
       let $oracle = $('.headBox .header .right .menuPopBox')
       $oracle.on('click', function(e) {
         let $this = $(this)
-        if ($this.hasClass('show')) {
+        if ($this.hasClass('show')) { // ,
           $this.removeClass('show')
         } else {
           $this.addClass('show')
@@ -154,7 +155,7 @@ function bindEvent() {
     })
   }
 
-  {
+  { // 
     let $btn = $('.footer .right .menuPopBox')
     if (data.isMobile) {
       $btn.on('click', function() {
@@ -194,7 +195,7 @@ function bindEvent() {
     }).then(result => {
       try {
         result = JSON.parse(result)
-        if (result.code === 200) {
+        if (result.code === 200) { // 
           toast({
             type: '',
             message: 'Subscription Succeeded!'
@@ -222,7 +223,7 @@ function bindEvent() {
     $video.remove() // 
     if ($popPage[0]) {
       // 
-      $('.banner .btn .btnBox').on('click', () => {
+      $('.menuPopBox .videoBtnBox').on('click', () => {
         $video.attr('src', $video.attr('data_src'))
         $video[0].currentTime = 0 // 
         $popPageBox.append($video)
