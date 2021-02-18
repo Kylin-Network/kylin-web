@@ -264,7 +264,7 @@ $divisor: 100; // (js)
                   .pop {
                     height: $fontSize * 3 * 2;
                     &.big {
-                      height: $fontSize * 3 * 4;
+                      height: $fontSize * 3 * 6;
                     }
                   }
                 }
@@ -283,7 +283,7 @@ $divisor: 100; // (js)
                   height: 0;
                   overflow: hidden;
                   transition: all 0.2s;
-                  a {
+                  a, span {
                     display: block;
                     text-align: left;
                     font-size: $fontSize;
