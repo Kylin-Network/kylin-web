@@ -55,7 +55,6 @@ $divisor: 100; // (js)
   body {
     background-color: #000;
     color: #fff;
-    $topLineBoxHeight: r(100px);
     .toast-box div {
       max-width: 90%;
       border-radius: r(100px);
@@ -139,45 +138,6 @@ $divisor: 100; // (js)
       transition: 0.3s;
       &.up {
         top: r(-58px);
-      }
-      .topLineBox {
-        width: 100%;
-        background-color: #ED007E;
-        transition: all 0.3s;
-        height: $topLineBoxHeight;
-        overflow: hidden;
-        box-sizing: border-box;
-        display: flex;
-        align-items: center;
-        position: relative;
-        left: 0;
-        top: 0;
-        &.hide {
-          height: 0px;
-        }
-        p {
-          width: 100%;
-          padding: 0 r(90px);
-          text-align: center;
-          line-height: 1.4em;
-          &, a {
-            font-family: Avenir-Heavy;
-            color: #FFFFFF;
-            font-size: r(30px);
-          }
-          a {
-            text-decoration: underline;
-          }
-        }
-        .closeX {
-          position: absolute;
-          right: r(20px);
-          top: 45%;
-          transform: translateY(-50%);
-          font-size: r(50px);
-          padding: r(20px);
-          cursor: pointer;
-        }
       }
       .headerTop {
         border-bottom: 1px solid #333;
@@ -364,13 +324,10 @@ $divisor: 100; // (js)
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding-top: r(400px) + $topLineBoxHeight;
+      padding-top: r(400px);
       box-sizing: border-box;
       min-height: 90vh;
       transition: padding-top 0.3s;
-      &.hideTopBar {
-        padding-top: r(400px);
-      }
       img {
         height: r(164px);
       }
