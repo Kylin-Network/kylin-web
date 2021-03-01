@@ -44,6 +44,7 @@ $divisor: 100; // (js)
   body {
     background-color: #000;
     color: #fff;
+    $topLineBoxHeight: r(43px);
     .toast-box div {
       max-width: 90%;
       border-radius: r(100px);
@@ -210,6 +211,39 @@ $divisor: 100; // (js)
       &.up {
         top: r(-58px);
       }
+      .topLineBox {
+        width: 100%;
+        background-color: #ED007E;
+        transition: all 0.3s;
+        height: $topLineBoxHeight;
+        overflow: hidden;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 0;
+        top: 0;
+        &.hide {
+          height: 0px;
+        }
+        p {
+          width: 100%;
+          padding: 0 r(20px);
+          text-align: center;
+          font-family: Avenir-Heavy;
+          color: #FFFFFF;
+          font-size: r(18px);
+        }
+        .closeX {
+          position: absolute;
+          right: r(20px);
+          top: 45%;
+          transform: translateY(-50%);
+          font-size: r(24px);
+          padding: r(5px);
+          cursor: pointer;
+        }
+      }
       .headerTop {
         border-bottom: 1px solid #333;
         height: r(48px);
@@ -307,7 +341,7 @@ $divisor: 100; // (js)
       z-index: -1;
     }
     .banner {
-      margin-top: r(100px);
+      margin-top: r(100px) + $topLineBoxHeight;
       display: flex;
       flex-direction: column;
       // align-items: center;
@@ -316,6 +350,9 @@ $divisor: 100; // (js)
       // height: calc(100vh - r(153px));
       height: 100vh;
       transition: margin-top 0.3s;
+      &.hideTopBar {
+        margin-top: r(100px);
+      }
       // img {
       //   height: r(100px);
       // }
