@@ -497,7 +497,7 @@ $divisor: 100; // (js)
             flex-direction: column;
             justify-items: center;
             span, p {
-              font-family: Avenir-Black;
+              font-family: Avenir-Book;
               font-size: r(72px);
               color: #FFFFFF;
               line-height: r(54px);
@@ -602,7 +602,7 @@ $divisor: 100; // (js)
               left: 0;
               top: 0;
               b {
-                font-family: Avenir-Black;
+                font-family: Avenir-Book;
                 color: #E6007A;
               }
               .cercleIco {
@@ -717,7 +717,7 @@ $divisor: 100; // (js)
           display: flex;
           align-items: center;
           // justify-content: center;
-          font-family: Avenir-Black;
+          font-family: Avenir-Book;
           font-size: r(72px);
           color: #FFFFFF;
           margin-bottom: r(101px);
@@ -782,7 +782,7 @@ $divisor: 100; // (js)
             margin: 0 auto;
             p {
               // font-family: Lobster;
-              font-family: Avenir-Medium;
+              font-family: Avenir-Black;
               font-size: r(42px);
               color: #FFFFFF;
               line-height: 1.4em;
@@ -837,7 +837,7 @@ $divisor: 100; // (js)
                   transition: all 0.3s;
                 }
                 p {
-                  font-family: Avenir-Medium;
+                  font-family: Avenir-Black;
                   font-size: r(32px);
                   color: #F0009E;
                   transition: all 0.3s;
@@ -866,7 +866,7 @@ $divisor: 100; // (js)
               margin-bottom: r(43px);
             }
             h6 {
-              font-family: Avenir-Black;
+              font-family: Avenir-Book;
               font-size: r(46px);
               color: #FFFFFF;
               line-height: 1.5em;
@@ -923,7 +923,7 @@ $divisor: 100; // (js)
             color: #FFFFFF;
             flex-direction: column;
             span, p {
-              font-family: Avenir-Black;
+              font-family: Avenir-Book;
               line-height: 1.1em;
             }
             p {
@@ -958,7 +958,7 @@ $divisor: 100; // (js)
               flex: none;
             }
             h6 {
-              font-family: Avenir-Black;
+              font-family: Avenir-Book;
               font-size: r(42px);
               color: #FFFFFF;
               line-height: 1.36em;
@@ -1003,7 +1003,7 @@ $divisor: 100; // (js)
         //     .text {
         //       flex: 1;
         //       h5 {
-        //         font-family: Avenir-Black;
+        //         font-family: Avenir-Book;
         //         font-size: r(42px);
         //         color: #FFFFFF;
         //         line-height: 1.2em;
@@ -1032,7 +1032,7 @@ $divisor: 100; // (js)
             // align-items: center;
             span, p {
               font-size: r(72px);
-              font-family: Avenir-Black;
+              font-family: Avenir-Book;
               line-height: 1.1em;
             }
             p {
@@ -1084,7 +1084,7 @@ $divisor: 100; // (js)
                 margin-bottom: r(28px);
               }
               h5 {
-                font-family: Avenir-Black;
+                font-family: Avenir-Book;
                 font-size: r(34px);
                 color: #FFFFFF;
                 line-height: 1.5em;
@@ -1152,7 +1152,7 @@ $divisor: 100; // (js)
           flex-direction: column;
           // align-items: center;
           h5 {
-            font-family: Avenir-Black;
+            font-family: Avenir-Book;
             font-size: r(72px);
             width: r(600px);
             color: #FFFFFF;
@@ -1300,7 +1300,7 @@ $divisor: 100; // (js)
             border-radius: 50%;
           }
           h5 {
-            font-family: Avenir-Black;
+            font-family: Avenir-Book;
             font-size: r(44px);
             color: #FFFFFF;
             position: relative;
@@ -1358,7 +1358,7 @@ $divisor: 100; // (js)
             border-radius: 50%;
           }
           h5 {
-            font-family: Avenir-Black;
+            font-family: Avenir-Book;
             font-size: r(72px);
             color: #FFFFFF;
             position: relative;
@@ -1422,7 +1422,7 @@ $divisor: 100; // (js)
             border-radius: 50%;
           }
           h5 {
-            font-family: Avenir-Black;
+            font-family: Avenir-Book;
             font-size: r(72px);
             color: #FFFFFF;
             position: relative;
@@ -1481,7 +1481,7 @@ $divisor: 100; // (js)
             border-radius: 50%;
           }
           h5 {
-            font-family: Avenir-Black;
+            font-family: Avenir-Book;
             font-size: r(72px);
             color: #FFFFFF;
             position: relative;
@@ -1539,7 +1539,7 @@ $divisor: 100; // (js)
             border-radius: 50%;
           }
           h5 {
-            font-family: Avenir-Black;
+            font-family: Avenir-Book;
             font-size: r(72px);
             color: #FFFFFF;
             position: relative;
@@ -1587,7 +1587,7 @@ $divisor: 100; // (js)
                   padding-bottom: r(20px);
                 }
                 .text {
-                  font-family: Avenir-Medium;
+                  font-family: Avenir-Black;
                   font-size: r(36px);
                   color: #FFFFFF;
                   line-height: 1.47em;
@@ -1633,7 +1633,7 @@ $divisor: 100; // (js)
         .subscribeInp {
           width: r(600px);
           height: 100%;
-          font-family: Avenir-Medium;
+          font-family: Avenir-Black;
           font-size: r(34px);
           color: #FFFFFF;
           box-sizing: border-box;
@@ -1649,7 +1649,7 @@ $divisor: 100; // (js)
           display: flex;
           align-items: center;
           justify-content: center;
-          font-family: Avenir-Medium;
+          font-family: Avenir-Black;
           font-size: r(34px);
           color: #FFFFFF;
           background-image: linear-gradient(-30deg, #F400B2 0%, #E6007A 100%);
@@ -1773,7 +1773,7 @@ $divisor: 100; // (js)
             line-height: 1.5em;
           }
         //   button {
-        //     font-family: Avenir-Medium;
+        //     font-family: Avenir-Black;
         //     font-size: r(35px);
         //     color: #FFFFFF;
         //     padding-top: r(50px);

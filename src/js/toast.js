@@ -21,8 +21,8 @@ window.toast = obj => {
   }
   dom.css({
     'position': 'fixed',
-    'top': '10%',
-    'left': '50%',
+    'top': '50%',
+    'left': '30%',
     'width': '100%',
     'transform': 'translateX(-50%)',
     'display': 'none',
@@ -39,13 +39,13 @@ window.toast = obj => {
     // 'border-radius': '3px' || obj['border-radius'],
     'border': obj.border || '',
     // 'padding': '10px 20px',
-    'box-shadow': '0 0 2px ' + color,
+    'box-shadow': '0 0 20px ' + color,
   })
   dom.addClass('toast-box').css('display', 'flex').animate({ 'opacity': 1 }, () => {
     window.toastTimer = setTimeout(() => {
       dom.animate({ 'opacity': 0 }, () => {
         dom.css('display', 'none')
       })
-    }, obj.timer || 3000)
+    }, obj.timer || 500)
   })
 }
