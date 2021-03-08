@@ -392,66 +392,72 @@ $divisor: 100; // (js)
         margin-top: r(50px);
         display: flex;
         align-items: center;
-        // a.btnBox {
-        //   width: r(90px);
-        //   height: r(90px);
-        //   position: relative;
-        //   left: 0;
-        //   top: 0;
-        //   z-index: 1;
-        //   display: flex;
-        //   align-items: center;
-        //   justify-content: center;
-        //   margin-right: r(30px);
-        //   &:active {
-        //     > div {
-        //       transform: translate(-50%, -50%) scale(1.1);
-        //     }
-        //   }
-        //   > div {
-        //     background-color: #ED007E;
-        //     border-radius: 50%;
-        //     position: absolute;
-        //     left: 50%;
-        //     top: 50%;
-        //     transform: translate(-50%, -50%);
-        //     width: r(90px);
-        //     height: r(90px);
-        //     z-index: 2;
-        //     transition: transform 0.3s ease-out;
-        //   }
-        //   > span {
-        //     position: relative;
-        //     left: 0;
-        //     top: 0;
-        //     z-index: 2;
-        //     display: block;
-        //     width: 3;
-        //     top: 0;
-        //     border-style: solid;
-        //     border-color: transparent transparent transparent #fff;
-        //     border-width: r(12px) 0 r(12px) r(18px);
-        //     transform: translateX(r(3px));
-        //   }
-        //   > b {
-        //     position: absolute;
-        //     left: 50%;
-        //     top: 50%;
-        //     transform: translate(-50%, -50%);
-        //     border-radius: 50%;
-        //     border: r(5px) solid #aaa;
-        //     animation: circleChange 3s infinite ease-out;
-        //     z-index: 1;
-        //   }
-        // }
-        // .videoTip {
-        //   font-size: r(40px);
-        //   align-items: center;
-        //   color: #ED007E;
-        // }
+        .videoBox {
+          display: flex;
+          align-items: center;
+          .btnBox {
+            width: r(90px);
+            height: r(90px);
+            position: relative;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: r(30px);
+            &:active {
+              > div {
+                transform: translate(-50%, -50%) scale(1.1);
+              }
+            }
+            > div {
+              background-color: #ED007E;
+              border-radius: 50%;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              width: r(90px);
+              height: r(90px);
+              z-index: 2;
+              transition: transform 0.3s ease-out;
+            }
+            > span {
+              position: relative;
+              left: 0;
+              top: 0;
+              z-index: 2;
+              display: block;
+              width: 3;
+              top: 0;
+              border-style: solid;
+              border-color: transparent transparent transparent #fff;
+              border-width: r(12px) 0 r(12px) r(18px);
+              transform: translateX(r(3px));
+            }
+            > b {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              border-radius: 50%;
+              border: r(5px) solid #aaa;
+              animation: circleChange 3s infinite ease-out;
+              z-index: 1;
+            }
+          }
+          p {
+            font-family: Avenir-Heavy;
+            font-size: r(40px);
+            align-items: center;
+            color: #ED007E;
+          }
+        }
         .bannerLinkBox {
           display: flex;
           align-items: center;
+          margin-left: r(50px);
           a {
             display: flex;
             align-items: center;
